@@ -80,7 +80,7 @@ display: flex;
 
 header{
   display: flex;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
   height:150px;
   background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);
   justify-content: center;
@@ -121,10 +121,4 @@ text-align: end;
 }
 
 
-
-.Fotow{
-  padding: 30px;
-  width: 650px;
-  height: 650px;
-}
 
