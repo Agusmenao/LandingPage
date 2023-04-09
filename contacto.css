@@ -28,20 +28,20 @@ form{
 }
 
 h2{
-    color: rgb(243, 243, 243);
+    color: rgb(255, 255, 255);
     font-size: 37px;
 
 }
 
 label{
-    color:rgb(246, 241, 250) ;
+    color:rgb(224, 33, 22) ;
     font-size: 20px;
     font-weight: 540;
     margin-bottom: 15px;
     text-align: center;
 }
 ::placeholder{
-color: white;
+color: rgb(10, 2, 2);
 }
 
 input, textarea{
@@ -49,17 +49,21 @@ input, textarea{
     padding:25px 15px;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: grey;
+    background-color: rgb(255, 254, 254);
+    outline: none;
 
 
 }
 .btne{
     width: 200px;
-    color: white;
+    color: rgb(234, 21, 21);
     font-size: 20px;
+    box-shadow: 0  0 20px rgba(0, 0, 0, 0.7);
 }
 
 .btne:hover{
-    background-image: linear-gradient(to top, #1c264f 0%, #b865f0 100%)
-    
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    color: blanchedalmond;
+    cursor: pointer;
+
 }
