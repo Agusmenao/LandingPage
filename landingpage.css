@@ -7,7 +7,7 @@
   }
    
 body{
- 
+
   max-height:100vh;
   color: white;
   background-size:70vh ;
@@ -29,7 +29,7 @@ body{
 }
 
 li{
-  
+
   min-width: 200px;
   display: flex;
   flex-direction: row;
@@ -47,17 +47,19 @@ li:hover{
 }
 
 .conte1{
-  display:flex ;
-  justify-content: center;
-  align-items: center;
+display:flex;
+
+
+
+
+
+
 }
 
 .img1{
-  display: flex;
   height: 60px;
-  align-items: center;
-  justify-content: center;
-
+justify-content: center;
+align-items: center;
 }
 
 
@@ -84,10 +86,34 @@ header{
   height:150px;
   background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);
   justify-content: center;
-  align-items:center ;
+  align-items: center;  
+
+}
+.contactobtn{
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 120px;
+ height: 70px;
+  position:relative;
+ left: 500px;
+ 
+
+}
+.contactobtn:hover{
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+  color:black;
+  transition: 0,8s;
 
 }
 
+
+.letraw{
+text-decoration:none;
+  color: white;
+}
 
 
 
@@ -119,6 +145,11 @@ align-items:center ;
 text-align: end;
 
 }
+
+
+
+
+
 
 
 
