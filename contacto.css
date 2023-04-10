@@ -1,69 +1,61 @@
-body{
-    background-image: url(/asset/fondoContacto.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  background-image: url(/asset/fondoContacto.jpg);/* Fondo del Sitio Editado con Photoshop */
+  font-family: Arial, Helvetica, sans-serif;/* Tipo de Letra */
+  min-height: 100vh;/* Tamaño de La visualización  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-form{
-    background-color: rgb(87, 7, 162);
-    padding: 50px 55px;
-    box-shadow: 0  0 20px rgba(0, 0, 0, 0.9);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 340px;
-    border-radius: 20px;
+form {
+  background-color: rgb(87, 7, 162);/* Color de fondo */
+  padding: 50px 55px;/* Agregando espacios */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);/* Sombras bajo el Formulario */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 340px;/* Ancho */
+  border-radius: 20px;/* Bordes Redondeados */
 }
 
-
-.conteform{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.conteform {/* Contenedor del los elementos del formulario */
+  display: flex;
+  flex-direction: column;/* Alinear elementos uno por encima del otro */
 }
 
-h2{
-    color: rgb(255, 255, 255);
-    font-size: 37px;
-
+h2 {
+  color: rgb(255, 255, 255);/* color de la letra */
+  font-size: 37px;/* Tamañp de la letra */
 }
 
-label{
-    color:rgb(224, 33, 22) ;
-    font-size: 20px;
-    font-weight: 540;
-    margin-bottom: 15px;
-    text-align: center;
+label {
+  color: rgb(224, 33, 22);/* Color de los nombres de las casillas */
+  font-size: 20px;/* Tamaño de las Letras */
+  margin-bottom: 15px;/* Leve sepacion hacia abajo entre casillas */
+  text-align: center; /* Alinear texto al centro */
 }
-::placeholder{
-color: rgb(10, 2, 2);
-}
-
-input, textarea{
-    border: 1px solid red;
-    padding:25px 15px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: rgb(255, 254, 254);
-    outline: none;
-
-
-}
-.btne{
-    width: 200px;
-    color: rgb(234, 21, 21);
-    font-size: 20px;
-    box-shadow: 0  0 20px rgba(0, 0, 0, 0.7);
+::placeholder {
+  color: rgb(10, 2, 2);/* Color de las letras del placeholder */
 }
 
-.btne:hover{
-    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
-    color: blanchedalmond;
-    cursor: pointer;
+input,
+textarea {
+  border: 2px solid red; /* Bordes del las casillas */
+  padding: 25px 15px; /* Tamaño de las casillas */
+  border-radius: 25px;/* Boredes redondeados */
+  margin-bottom: 25px;/* sepacion por debajo */
+  background-color: rgb(255, 254, 254);
+  outline: none;/* Quita el efecto que aplica al hacer click sobre la casilla */
+}
+.btne {
+  width: 200px;/* Tamaño del Botón */
+  color: rgb(234, 21, 21);/* Su color */
+  font-size: 20px;/* Tamaño de la letra */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);/* Sombra  */
+}
 
+.btne:hover {/* Efecto del Botón */
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);/* Color del efecto */
+  color: blanchedalmond;/* Color de la letra */
+  cursor: pointer;/* Cambio del cursor */
 }

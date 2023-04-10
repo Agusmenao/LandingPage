@@ -1,155 +1,130 @@
-  *{
-  box-sizing: content-box;
-  font-family: sans-serif;
-  margin: 0;
+* {
+  /* selector universal */
+  font-family: sans-serif; /* tipo de letra */
+  margin: 0; /* margenes del sitio */
+}
+html {
+  box-sizing: border-box; /* calcula las dimensiones de los elementos */
+}
 
-   
-  }
-   
-body{
-
-  max-height:100vh;
+body {
+  height: 100vh; /* tamaño del body */
   color: white;
-  background-size:70vh ;
-  background-image: url(/asset/polygon-scatter-haikei.png)
- 
+  background-size: 70vh; /* tamaño del fondo del sitio*/
+  background-image: url(/asset/polygon-scatter-haikei.png); /* imagen del fondo del sitio */
 }
 
-  
-.contnav{
-  background-color: rgb(50, 0, 90);
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-direction: row;
- }
-
-.list11{
-  display: flex;
+.contnav {  /* Contendor del navbar */
+  background-color: rgb(50, 0, 90);/* Color del Fondo */
+  display: flex;/*  Tipo de display */
+  list-style: none;/*  Tipo de Listas */
+  justify-content: center;/* Centrar contenido */
+  flex-direction: row;/*  Direccion del Contenido */
 }
 
-li{
-
-  min-width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  
- 
+.list1 { /* Contenedor de Listas */
+  display: flex;/* Tipo de Display */
 }
-li:hover{
-  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+
+li {/*  Listas  */
+  min-width: 200px; /* Tamaño de espaciado mínimo */
+  display: flex;/* Tipo de Display */
+  flex-direction: row;/* Dirección */
+  justify-content: space-around;/* Separación de las listas */
+  list-style: none;/* Borrado de Puntos */
+}
+li:hover {/* Efectos Sobre las Listas */
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);/* Colores Bi-tono para el fondo */
   color: white;
-  transition: all 0.8s;
-  cursor: pointer;
- 
+  transition: all 0.8s;/* Tiempo de La Transición */
+  cursor: pointer;/* Tipo de cursor */
 }
 
-.conte1{
-display:flex;
-
-
-
-
-
-
+.conte1 {
+  /* contenedor del logo del header */
+  display: flex;
 }
 
-.img1{
-  height: 60px;
-justify-content: center;
-align-items: center;
+.LogodePag {
+  /* Logo del header */
+  height: 60px; /* tamaño */
 }
 
-
-
-#contenedorab{
-min-height:calc(100vh -150px -200px) ;
-display: flex;
+#contenedorab { /* Contenedor del Menu con calculo para el Footer  */
+  min-height: calc(100vh -150px -200px);/* 100 del espacio visible menos 150px del header y los 200px del footer */
+  display: flex;
 }
 
-.conteMenu{
-  
-  font-size: 29px;
- text-align: center;
+.conteMenu {/* Contenedor de la Presentación */
+  font-size: 29px;/* Tamaño de la letra */
+  text-align: center;/* alineado del contenido */
   align-items: center;
   color: aqua;
 }
-  
 
-
-
-header{
-  display: flex;
-  border-bottom: 2px solid red;
-  height:150px;
-  background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);
-  justify-content: center;
-  align-items: center;  
-
+header {
+  display: flex;/* Tipo de display */
+  border-bottom: 2px solid red;/* Linea del Final  */
+  height: 150px;/* Altura del header */
+  background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);/* Color Bi-tono del fondo */
+  justify-content: center;/* Alineacion */
+  align-items: center;
 }
-.contactobtn{
-  border-radius: 15px;
-  border: 1px solid black;
+.contactobtn {/* Contenedor del Botón */
+  border-radius: 15px;/* Borde Redondeado */
+  border: 1px solid red; /* Color del borde del boton */
   display: flex;
   justify-content: center;
   align-items: center;
- width: 120px;
- height: 70px;
-  position:relative;
- left: 500px;
- 
-
+  width: 120px;/* Ancho */
+  height: 70px;/* Alto */
+  position: relative;/* Posición */
+  left: 500px;/* Alineado  la posición deseada */
 }
-.contactobtn:hover{
-  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
-  color:black;
-  transition: 0,8s;
-
+.contactobtn:hover {/* Efecto sobre el botón */
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);/* Color */
+  color: black;/* Color de Letra */
+  transition: 0, 8s;/* Tiempo de Transición */
 }
 
-
-.letraw{
-text-decoration:none;
-  color: white;
+.letrancla{
+  text-decoration: none;/* Quitar Subrayado */
+  color: white;/* Cambio de color */
 }
 
-
-
-
-main{
-  padding: 100px;
-
+main {
+  padding: 100px;/* Agregar Separación en el Menú */
 }
 
-footer{
-  width: 100%;
-  border-top:2px solid red;
-  align-items: center;
-  height:200px;
+footer {
+  width: 100%;/* Ancho del Footer */
+  border-top: 2px solid red;/* Borde de color */
+  align-items: center;/* Alineado de Elementos */
+  height: 200px;/* Altura */
   display: flex;
-  background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);
+  background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);/* Color */
   justify-content: center;
+}
 
+.list2 {/* Lista 2 */
+  min-width: 700px;/* Separación de lo elementos de la lita */
+  display: flex;
+  list-style: none;/* Quitando Puntos */
+  justify-content: space-between;/* Agraga Separación */
+  align-items: center;
+  text-align: end;
+}
+
+.Miperfil{
+ color: rgb(248, 248, 248);
+ margin-bottom: 20px;
+}
+
+.Fondoimg{
+width: 550px;
+height: 300px;
+border-radius:25px;
+box-shadow: 10px 3px 10px 2px rgb(222, 11, 11), -10px 0 4px rgb(77, 2, 104);
  
-  
 }
-
-.list2{
-min-width: 700px;
-display: flex;
-list-style:none;
-justify-content: space-between;
-align-items:center ;
-text-align: end;
-
-}
-
-
-
-
-
-
-
 
