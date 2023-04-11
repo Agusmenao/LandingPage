@@ -27,12 +27,19 @@ body {
   display: flex;/* Tipo de Display */
 }
 
+a{
+  color:white;
+  text-decoration: none;
+}
+
+
 li {/*  Listas  */
   min-width: 200px; /* Tamaño de espaciado mínimo */
   display: flex;/* Tipo de Display */
   flex-direction: row;/* Dirección */
   justify-content: space-around;/* Separación de las listas */
   list-style: none;/* Borrado de Puntos */
+  text-decoration: none;
 }
 li:hover {/* Efectos Sobre las Listas */
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);/* Colores Bi-tono para el fondo */
@@ -62,15 +69,17 @@ li:hover {/* Efectos Sobre las Listas */
   text-align: center;/* alineado del contenido */
   align-items: center;
   color: rgb(239, 239, 239);
-  margin-top: -50px;
+  margin-top: 100px;
   margin-bottom: 60px;
 }
 
 
 header {/* Cabecera */
+  position: fixed;
   display: flex;/* Tipo de display */
   border-bottom: 2px solid red;/* Linea del Final  */
   height: 150px;/* Altura del header */
+  width: 100vw;
   background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);/* Color Bi-tono del fondo */
   justify-content: center;/* Alineacion */
   align-items: center;
@@ -131,19 +140,25 @@ width: 950px;
 height: 300px;
 border-radius:25px;
 box-shadow: 10px 3px 10px 2px rgb(222, 11, 11), -10px 0 4px rgb(77, 2, 104);
- margin-bottom: 20px;
+ margin-bottom: 40px;
+
+ 
+}
+
+.parrafo1{
+margin-bottom: 70px;
+
+
 }
 
 #FDC{
-display: grid;
-justify-content: end;
-margin-top: -500px;
-
+position: fixed;
 
 }
 
 
 form {
+ 
   background-color: rgb(87, 7, 162);/* Color de fondo */
   padding: 50px 55px;/* Agregando espacios */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);/* Sombras bajo el Formulario */
@@ -159,6 +174,7 @@ form {
 }
 
 h2 {
+ 
   color: rgb(255, 255, 255);/* color de la letra */
   font-size: 37px;/* Tamañp de la letra */
 }
@@ -201,10 +217,11 @@ textarea {
 
 #boton{
 position: relative;
-bottom:620px;
-right: 1600px;
+bottom: 45px;
+right: 00px;
+height: 60px;
 padding: 20px;
-width: 120px;
+width: 130px;
 border-radius:10px;
 color: rgb(255, 255, 255);
 font-size:15px;
@@ -228,6 +245,7 @@ h3{
   padding: 40px;
   display: flex;
   justify-content:space-around;
+  margin-bottom: -350px;
 }
 
 .pcbarata{

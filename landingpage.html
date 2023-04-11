@@ -17,10 +17,10 @@
     <div class="contnav"><!-- Contenedor del navbar -->
         <nav class="navegator"><!--Barra de Navegación -->
             <ul class="list1"><!-- Lista desordenada -->
-                <li>Inicio</li>
-                <li>Menú</li>
-                <li>Soporte</li>
-                <li>Nosotros</li>
+                <li><a href="#fin">Redes</a></li>
+                <li><a target="_blank" href="https://support.google.com/chrome/answer/95315?hl=es-419&co=GENIE.Platform%3DDesktop">Reportar problemas</a></li>
+                <li><a target="_blank" href="https://support.google.com/?hl=es">Soporte</a></li>
+                <li><a target="_blank" href="https://www.hardgamers.com.ar/"> Nosotros</a></li>
             </ul>
         </nav>
 
@@ -33,14 +33,45 @@
         </div>
         <div class="contactobtn"><!-- Contenedor del boton -->
             <a class="letrancla" target="_blank" href="contacto.html"
-                title="Formulario de contacto">Contacto</a><!-- Boton del formulario de contacto -->
+                title="Formulario de contacto">Formulario</a><!-- Boton del formulario de contacto -->
         </div>
     </header>
 
 
     <main>
-        
+        <section id="FDC">
+            <button id="boton" onclick="mostrar();" >Contacto</button><!-- Boton con el activador de js -->
 
+            <div id="OcultarForm"><!-- Id del formulario -->
+                <form><!-- Formulario -->
+
+                    <h2 class="t2">Contacto</h2><!-- Título -->
+            
+                    <section class="conteform"><!-- Contenedor de los labels e inputs -->
+                        
+                    <label for="Nombre">Nombre</label><!-- Casilla de Nombre -->
+                    <input type="text" name="name" id="Nombre" placeholder="Nombre">
+                    
+                    <label for="email">Correo</label><!-- Casilla de correo -->
+                    <input type="email" name="email" id="email" placeholder="Correo electronico">
+            
+                    <label for="celular">Celular</label><!-- Casilla de Número celular -->
+                    <input type="phone" name="phone" id="celular" placeholder="Número de celular">
+            
+                    <label for="texto">Mensaje</label><!-- Casilla del textarea -->
+                    <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Deje su mensaje"></textarea>
+            
+                    </section>
+                    <div class="botonEnviar"><!-- Contenedor del Botón -->
+                        <input class="btne" type="submit" value="Enviar"><!-- Botón "enviar" -->
+                    </div>
+                   
+                </form>
+            </div>
+
+          
+            
+        </section>   
 
         <section id="contenedorab"><!-- Contenedor del articulo -->
             <article class="conteMenu"><!-- Presentación personal -->
@@ -49,7 +80,7 @@
                     <img class="Agustin" src="/asset/foNDO612.jpg"
                     alt="FotoWeb" class="Fondoimg">    <!-- Imagen ilustrativa -->
                 </div>
-                <p><strong>Desarrolador Web inicial</strong><!--Párrafo con salto y Resaltado -->
+                <p class="parrafo "><strong>Desarrolador Web inicial</strong><!--Párrafo con salto y Resaltado -->
                   Tipo de grupo: Autodidacta
                 </p>
             </article>
@@ -97,39 +128,7 @@
 
 
 
-        <section id="FDC">
-            <button id="boton" onclick="mostrar();" >Contacto</button><!-- Boton con el activador de js -->
-
-            <div id="OcultarForm"><!-- Id del formulario -->
-                <form><!-- Formulario -->
-
-                    <h2 class="t2">Contacto</h2><!-- Título -->
-            
-                    <section class="conteform"><!-- Contenedor de los labels e inputs -->
-                        
-                    <label for="Nombre">Nombre</label><!-- Casilla de Nombre -->
-                    <input type="text" name="name" id="Nombre" placeholder="Nombre">
-                    
-                    <label for="email">Correo</label><!-- Casilla de correo -->
-                    <input type="email" name="email" id="email" placeholder="Correo electronico">
-            
-                    <label for="celular">Celular</label><!-- Casilla de Número celular -->
-                    <input type="phone" name="phone" id="celular" placeholder="Número de celular">
-            
-                    <label for="texto">Mensaje</label><!-- Casilla del textarea -->
-                    <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Deje su mensaje"></textarea>
-            
-                    </section>
-                    <div class="botonEnviar"><!-- Contenedor del Botón -->
-                        <input class="btne" type="submit" value="enviar"><!-- Botón "enviar" -->
-                    </div>
-                   
-                </form>
-            </div>
-
-          
-            
-        </section>    
+       
     </main>
 
 
@@ -145,7 +144,7 @@
                 <li>terminos y condiciones</li>
                 <li>ayuda</li>
                 <li>defensa del consumidor</li>
-                <li>trabaja con nosotros</li>
+                <li id="fin">trabaja con nosotros</li>
             </ul>
         </div>
 
