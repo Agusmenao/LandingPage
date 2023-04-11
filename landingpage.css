@@ -1,10 +1,11 @@
 * {
   /* selector universal */
-  font-family: sans-serif; /* tipo de letra */
+
   margin: 0; /* margenes del sitio */
 }
 html {
   box-sizing: border-box; /* calcula las dimensiones de los elementos */
+  font-family: sans-serif;
 }
 
 body {
@@ -51,18 +52,22 @@ li:hover {/* Efectos Sobre las Listas */
 }
 
 #contenedorab { /* Contenedor del Menu con calculo para el Footer  */
-  min-height: calc(100vh -150px -200px);/* 100 del espacio visible menos 150px del header y los 200px del footer */
+  max-height: calc(100vh -150px -200px);/* 100 del espacio visible menos 150px del header y los 200px del footer */
   display: flex;
+  justify-content: center;
 }
 
 .conteMenu {/* Contenedor de la Presentación */
   font-size: 29px;/* Tamaño de la letra */
   text-align: center;/* alineado del contenido */
   align-items: center;
-  color: aqua;
+  color: rgb(239, 239, 239);
+  margin-top: -50px;
+  margin-bottom: 60px;
 }
 
-header {
+
+header {/* Cabecera */
   display: flex;/* Tipo de display */
   border-bottom: 2px solid red;/* Linea del Final  */
   height: 150px;/* Altura del header */
@@ -97,6 +102,7 @@ main {
 }
 
 footer {
+  margin-top: 500px;
   width: 100%;/* Ancho del Footer */
   border-top: 2px solid red;/* Borde de color */
   align-items: center;/* Alineado de Elementos */
@@ -120,11 +126,153 @@ footer {
  margin-bottom: 20px;
 }
 
-.Fondoimg{
-width: 550px;
+.Agustin{
+width: 950px;
 height: 300px;
 border-radius:25px;
 box-shadow: 10px 3px 10px 2px rgb(222, 11, 11), -10px 0 4px rgb(77, 2, 104);
- 
+ margin-bottom: 20px;
 }
+
+#FDC{
+display: grid;
+justify-content: end;
+margin-top: -500px;
+
+
+}
+
+
+form {
+  background-color: rgb(87, 7, 162);/* Color de fondo */
+  padding: 50px 55px;/* Agregando espacios */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);/* Sombras bajo el Formulario */
+  text-align: center;
+  width: 340px;/* Ancho */
+  border-radius: 20px;/* Bordes Redondeados */
+}
+
+.conteform {/* Contenedor del los elementos del formulario */
+  display: flex;
+  flex-direction: column;/* Alinear elementos uno por encima del otro */
+  
+}
+
+h2 {
+  color: rgb(255, 255, 255);/* color de la letra */
+  font-size: 37px;/* Tamañp de la letra */
+}
+
+label {
+  color: rgb(224, 33, 22);/* Color de los nombres de las casillas */
+  font-size: 20px;/* Tamaño de las Letras */
+  margin-bottom: 15px;/* Leve sepacion hacia abajo entre casillas */
+  text-align: center; /* Alinear texto al centro */
+}
+::placeholder {
+  color: rgb(10, 2, 2);/* Color de las letras del placeholder */
+}
+
+input,
+textarea {
+  border: 2px solid red; /* Bordes del las casillas */
+  padding: 25px 15px; /* Tamaño de las casillas */
+  border-radius: 25px;/* Boredes redondeados */
+  margin-bottom: 25px;/* sepacion por debajo */
+  background-color: rgb(255, 254, 254);
+  outline: none;/* Quita el efecto que aplica al hacer click sobre la casilla */
+}
+.btne {
+  width: 200px;/* Tamaño del Botón */
+  color: rgb(234, 21, 21);/* Su color */
+  font-size: 20px;/* Tamaño de la letra */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);/* Sombra  */
+}
+
+.btne:hover {/* Efecto del Botón */
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);/* Color del efecto */
+  color: blanchedalmond;/* Color de la letra */
+  cursor: pointer;/* Cambio del cursor */
+}
+
+#OcultarForm{
+  display: none;
+}
+
+#boton{
+position: relative;
+bottom:620px;
+right: 1600px;
+padding: 20px;
+width: 120px;
+border-radius:10px;
+color: rgb(255, 255, 255);
+font-size:15px;
+background-color: black;
+border: 2px solid rgb(255, 0, 0);
+}
+
+#boton:hover{
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+ color: blanchedalmond;/* Color de la letra */
+  cursor: pointer;/* Cambio del cursor */
+
+}
+h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: red;
+}
+
+.conteimg{
+  padding: 40px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.pcbarata{
+
+  margin-bottom: 20px;
+  width: 390px;
+  height:380px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(225, 17, 17, 0.9)
+}
+
+.pcmedia{
+
+  margin-right: 20px;
+border-radius: 25px;
+width: 390px;
+height:380px;
+box-shadow: 0 0 20px rgba(225, 17, 17, 0.9)
+
+}
+
+.pcalta{
+  margin-right: 20px;
+border-radius: 25px;
+width: 390px;
+height:380px;
+box-shadow: 0 0 20px rgba(225, 17, 17, 0.9)
+
+}
+
+.pc1{
+padding: 15px;
+margin-top: 20px;
+line-height:2.5;
+}
+
+.pc2{
+  padding: 15px;
+  margin-top: 20px;
+  line-height:2.5;
+  }
+
+  .pc3{
+    padding: 15px;
+    margin-top:-10px;
+    line-height:2.5;
+    }
 

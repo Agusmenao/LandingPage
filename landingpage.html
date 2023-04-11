@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingPage</title><!-- Nombre de la pagina -->
     <link rel="stylesheet" href="/landingpage.css"><!-- enlace de estilos -->
-    <script src=""></script><!-- enlace de javaScript -->
     <script src="https://kit.fontawesome.com/b7875070c1.js" crossorigin="anonymous"></script><!-- enlace de iconos -->
 </head>
 
@@ -28,7 +27,7 @@
     </div>
 
 
-    <header>
+    <header><!-- Cabecera -->
         <div class="conte1"><!-- Contenedor del Logo -->
             <img src="/asset/logoextremeFinal.png" alt="" class="LogodePag"><!-- Logotipo del sitio -->
         </div>
@@ -40,18 +39,97 @@
 
 
     <main>
+        
+
+
         <section id="contenedorab"><!-- Contenedor del articulo -->
             <article class="conteMenu"><!-- Presentación personal -->
-                <h3 class="Miperfil">Agustin Menao</h3> <!-- Nombre -->
+                <h2 class="Miperfil">Agustin Menao</h2> <!-- Nombre -->
                 <div class="tranformImg">
-                    <img src="https://www.factoriabiz.com/wp-content/uploads/2018/03/contratar_programador.jpg"
+                    <img class="Agustin" src="/asset/foNDO612.jpg"
                     alt="FotoWeb" class="Fondoimg">    <!-- Imagen ilustrativa -->
                 </div>
-                <p><strong>Desarrolador Web inicial</strong><br> <!--Párrafo con salto y Resaltado -->
-                    Tipo de grupo autodidacta
+                <p><strong>Desarrolador Web inicial</strong><!--Párrafo con salto y Resaltado -->
+                  Tipo de grupo: Autodidacta
                 </p>
             </article>
         </section>
+
+       
+        <div class="conteimg">
+            <img class="pcalta" src="https://www.smartpc.ma/storage/2022/08/7555-MARS-GAMING-MCV-XXL-Blanc-smartpc-600x600.jpg" alt="">
+            <div>
+                <h3>Pc master race</h3>
+                <p class="pc1">
+                    i9-13900k <br>
+                    ssd-nvme 4.0 2tb <br>
+                    32gb ram DDR5 6000MHz <br>
+                    Rtx 4090 <br>
+                    corsair-HX-1200w
+
+                </p>
+            </div>
+            <img class="pcmedia" src="https://http2.mlstatic.com/D_NQ_NP_935028-MLM53416231543_012023-O.jpg" alt="">
+          <div>
+            <h3>Pc gama media</h3>
+            <p class="pc2">i5-12600kf <br>
+                ssd 480gb <br>
+                16gb de ram a 3200MHz <br>
+                rx 6650xt <br>
+                corsair cx-650w
+            </p>
+          </div>
+            <img class="pcbarata" src="https://http2.mlstatic.com/D_NQ_NP_959433-MLA45464508274_042021-O.jpg" alt="" >
+            <div>
+                <h3>pc de entrada</h3>
+                <p  class="pc3"> 
+                    Pentium gold G7400 <br>
+                    1tb HDD <br>
+                    8gb de ram a 2666MHz <br>
+                    rx-6400xt <br>
+                    corsair vs-550w
+
+
+                </p>
+
+            </div>
+    </div>
+
+
+
+        <section id="FDC">
+            <button id="boton" onclick="mostrar();" >Contacto</button><!-- Boton con el activador de js -->
+
+            <div id="OcultarForm"><!-- Id del formulario -->
+                <form><!-- Formulario -->
+
+                    <h2 class="t2">Contacto</h2><!-- Título -->
+            
+                    <section class="conteform"><!-- Contenedor de los labels e inputs -->
+                        
+                    <label for="Nombre">Nombre</label><!-- Casilla de Nombre -->
+                    <input type="text" name="name" id="Nombre" placeholder="Nombre">
+                    
+                    <label for="email">Correo</label><!-- Casilla de correo -->
+                    <input type="email" name="email" id="email" placeholder="Correo electronico">
+            
+                    <label for="celular">Celular</label><!-- Casilla de Número celular -->
+                    <input type="phone" name="phone" id="celular" placeholder="Número de celular">
+            
+                    <label for="texto">Mensaje</label><!-- Casilla del textarea -->
+                    <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Deje su mensaje"></textarea>
+            
+                    </section>
+                    <div class="botonEnviar"><!-- Contenedor del Botón -->
+                        <input class="btne" type="submit" value="enviar"><!-- Botón "enviar" -->
+                    </div>
+                   
+                </form>
+            </div>
+
+          
+            
+        </section>    
     </main>
 
 
@@ -73,7 +151,7 @@
 
     </footer>
 
-
+<script src="/landingpage.js"></script>
 </body>
 
 </html>
