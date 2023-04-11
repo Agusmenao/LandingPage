@@ -210,7 +210,14 @@ textarea {
   color: blanchedalmond;/* Color de la letra */
   cursor: pointer;/* Cambio del cursor */
 }
+#boton2{
+  border-radius:10px;
+  color: rgb(255, 255, 255);
+  font-size:15px;
+  background-color: black;
+  border: 2px solid rgb(255, 0, 0);
 
+}
 #OcultarForm{
   display: none;
 }
