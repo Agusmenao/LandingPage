@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de compra</title><!-- Nombre del sitio -->
-    <link rel="stylesheet" href="/LandingPage/NeW/LandingPage/contacto.css"><!-- Link de los stilos -->
+    <link rel="stylesheet" href="/contacto.css"><!-- Link de los stilos -->
 </head>
 <body>
-    <form class="formulario"><!-- Formulario -->
+ <form class="formulario"><!-- Formulario -->
+  <h2 class="t2">Compra</h2><!-- Título -->
 
-        <h2 class="t2">Contacto</h2><!-- Título -->
-        <div class="Formulariopaso1"><!-- Contenedor de los labels e inputs -->
-        <div class="Conteinput">
-            <label for="Nombre">Nombre</label><!-- Casilla de Nombre -->
+  <div class="progressbar">
+    <div class="etapadeprogreso" data-title="Datos"></div>
+    <div class="etapadeprogreso" data-title="Domicilio"></div>
+    <div class="etapadeprogreso" data-title="Finalizar"></div>
+  </div>
+
+
+
+    <div class="Formulariopaso1"><!-- para el js -->
+        <div class="Conteinput1"><!-- Contenedor de los labels e inputs -->
+            <label for="Nombre">Nombre completo</label><!-- Casilla de Nombre -->
             <input  type="text" name="name"  placeholder="Nombre" id="Nombre" >
+         </div>
         </div>
-        <div class="Conteinput">
+        <div class="Conteinput1">
             <label for="email">Correo</label><!-- Casilla de correo -->
             <input type="email" name="email" id="email" placeholder="Correo electronico">
         </div>
         <div class="btn">
             <a href="#" class="btnsiguiente">Siguiente</a>
         </div>
-        <div class="Formulariopaso1"><!-- Contenedor de los labels e inputs -->
-            <div class="Conteinput">
+        <div class="Formulariopaso1"><!-- para el js -->
+            <div class="Conteinput"><!-- Contenedor de los labels e inputs -->
                 <label for="codigoPostal">Codigo Postal</label><!-- Casilla de Nombre -->
-                <input  type="text" name="codigoPostal"  placeholder="codigoPostal" id="codigoPostal" >
+                <input type="text" name="codigoPostal"  placeholder="j:1987" id="codigoPostal">
             </div>
             <div class="Conteinput">
                 <label for="Dirección">Direccion</label><!-- Casilla de correo -->
@@ -36,7 +45,18 @@
                 <a href="#" class="bntatrás">atrás</a>
                 <a href="#" class="btnsiguiente">Siguiente</a>
             </div>
-
+            <div class="Formulariopaso1"><!-- para el js -->
+                <div class="Conteinput"><!-- Contenedor de los labels e inputs -->
+                    <label for=">Selecione su Pc">Selecione su Pc</label><!-- Casilla de Nombre -->
+                    <input  type="text" name=">Selecione su Pc"  placeholder="Ej:pc gama media" id=">Selecione su Pc">
+                </div>
+                <div class="Conteinput">
+                    <label for="Metodo de pago">Metodo de pago</label><!-- Casilla de correo -->
+                    <input type="text" name=">Metodo de pago" id=">Metodo de pago" placeholder="Metodo de pago">
+                </div>
+                <div class="botones">
+                    <a href="#" class="bntatrás">atrás</a>
+                    <a href="#" class="btnsiguiente">Siguiente</a>
     </form>
 </div>
 

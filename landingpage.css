@@ -140,20 +140,17 @@ width: 950px;
 height: 300px;
 border-radius:25px;
 box-shadow: 10px 3px 10px 2px rgb(222, 11, 11), -10px 0 4px rgb(77, 2, 104);
- margin-bottom: 40px;
+margin-bottom: 40px;
 
- 
 }
 
 .parrafo1{
 margin-bottom: 70px;
 
-
 }
 
 #FDC{
 position: fixed;
-
 }
 
 
@@ -234,6 +231,20 @@ font-size:15px;
 background-color: black;
 border: 2px solid rgb(255, 0, 0);
 }
+
+#boton2{
+  padding: 20px 50px;
+  background-color: red;
+  font-size: 20px;
+}
+
+#boton2:hover{
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+  color: blanchedalmond;/* Color de la letra */
+   cursor: pointer;/* Cambio del cursor */
+}
+
+
 
 #boton:hover{
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
