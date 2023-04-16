@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de compra</title><!-- Nombre del sitio -->
     <link rel="stylesheet" href="/contacto.css"><!-- Link de los stilos -->
+    
 </head>
 <body>
- <form class="formulario"><!-- Formulario -->
+ <form action="#" class="formulario"><!-- Formulario -->
   <h2 class="t2">Compra</h2><!-- Título -->
-
-  <div class="progressbar">
+  <div class="barradeprogreso">
+    <div class="progreso" id="progreso"></div>
     <div class="etapadeprogreso" data-title="Datos"></div>
     <div class="etapadeprogreso" data-title="Domicilio"></div>
     <div class="etapadeprogreso" data-title="Finalizar"></div>
@@ -19,7 +20,7 @@
 
 
 
-    <div class="Formulariopaso1"><!-- para el js -->
+    <div class="Formulario-paso formulario-pasos-activo"><!-- para el js -->
         <div class="Conteinput1"><!-- Contenedor de los labels e inputs -->
             <label for="Nombre">Nombre completo</label><!-- Casilla de Nombre -->
             <input  type="text" name="name"  placeholder="Nombre" id="Nombre" >
@@ -29,10 +30,10 @@
             <label for="email">Correo</label><!-- Casilla de correo -->
             <input type="email" name="email" id="email" placeholder="Correo electronico">
         </div>
-        <div class="btn">
-            <a href="#" class="btnsiguiente">Siguiente</a>
+        <div class=" ">
+            <a href="#" class="btn btn-siguiente width-50 ml-auto">Siguiente</a>
         </div>
-        <div class="Formulariopaso1"><!-- para el js -->
+        <div class="Formulario-paso"><!-- para el js -->
             <div class="Conteinput"><!-- Contenedor de los labels e inputs -->
                 <label for="codigoPostal">Codigo Postal</label><!-- Casilla de Nombre -->
                 <input type="text" name="codigoPostal"  placeholder="j:1987" id="codigoPostal">
@@ -41,11 +42,12 @@
                 <label for="Dirección">Direccion</label><!-- Casilla de correo -->
                 <input type="text" name="Dirección" id="Dirección" placeholder="Dirección">
             </div>
-            <div class="botones">
-                <a href="#" class="bntatrás">atrás</a>
-                <a href="#" class="btnsiguiente">Siguiente</a>
+        </div>
+            <div class="btns-grupo">
+                <a href="#" class="btn btn-atrás">atrás</a>
+                <a href="#" class="btn btn-siguiente">Siguiente</a>
             </div>
-            <div class="Formulariopaso1"><!-- para el js -->
+            <div class="Formulario-paso"><!-- para el js -->
                 <div class="Conteinput"><!-- Contenedor de los labels e inputs -->
                     <label for=">Selecione su Pc">Selecione su Pc</label><!-- Casilla de Nombre -->
                     <input  type="text" name=">Selecione su Pc"  placeholder="Ej:pc gama media" id=">Selecione su Pc">
@@ -54,16 +56,18 @@
                     <label for="Metodo de pago">Metodo de pago</label><!-- Casilla de correo -->
                     <input type="text" name=">Metodo de pago" id=">Metodo de pago" placeholder="Metodo de pago">
                 </div>
-                <div class="botones">
-                    <a href="#" class="bntatrás">atrás</a>
-                    <a href="#" class="btnsiguiente">Siguiente</a>
+            </div>
+                <div class="btns-grupo">
+                    <a href="#" class="btn btn-atrás">atrás</a>
+                   <input type="submit" value="submit" class="btn">
+                </div>
     </form>
-</div>
 
 
 
 
 
+<script src="/landingpage.js" defer></script>
 
 </body>
 </html>

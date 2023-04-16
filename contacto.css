@@ -15,10 +15,12 @@ body {
 }
 
 label{
+
 font-family: Arial, Helvetica, sans-serif;
 display: grid;
-margin-top: 25px;
-margin-bottom: 10px;
+margin-top: 30px;
+margin-bottom: 20px;
+
 }
 
 .t2{
@@ -39,7 +41,7 @@ input {
   margin-bottom: 15px;
 }
 
-.progressbar{
+.barradeprogreso{
 position: relative;
 display: flex;
 justify-content: space-between;
@@ -47,7 +49,7 @@ counter-reset: step;
 }
 
 
-.progressbar::before{
+.barradeprogreso::before ,.progreso{
   content:"";
   position: absolute;
   top:50%;
@@ -57,7 +59,17 @@ counter-reset: step;
   background-color: red;
 }
 
+.progreso{
+  width: 0%;
+}
 
+-width-50{
+  width: 50%;
+}
+ .ml-auto{
+margin-left: auto;
+
+ }
 
 .etapadeprogreso{
 width: 35px;
@@ -79,7 +91,8 @@ content:counter(step);
   content: attr(data-title);
   position: absolute;
   top:calc(100% + 5px);
-  font-size: 10px;
+  font-size: 12px;
+
 }
 
 .formulario {/* formulario */
@@ -93,14 +106,14 @@ content:counter(step);
   margin:10px 20px ;/* largo y ancho en pixeles */
   }
 
-  .botones{
+  .btns-grupo{
   display: grid;
   grid-template-columns: repeat(2,130px);
   gap: 10px;
 
   }
 
-.btnsiguiente ,.bntatrás{
+.btn-siguiente ,.btn-atrás{
 padding: 20px;
 display: block;
 margin-top: 20px;
@@ -113,20 +126,20 @@ cursor: pointer;
 transition: 0,3s;
 }
 
-.bntatrás:hover{
+.btn-atrás:hover{
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
   color: blanchedalmond;/* Color de la letra */
  cursor: pointer;/* Cambio del cursor */
 }
 
-.btnsiguiente:hover{
+.btn-siguiente:hover{
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
   color: blanchedalmond;/* Color de la letra */
    cursor: pointer;/* Cambio del cursor */
  
 }
 
-.Formulariopaso1{
+.Formulario-paso{
   display: blocks;
 }
 
@@ -134,6 +147,6 @@ transition: 0,3s;
   display: none;
 }
 
-.botones{
+.btns-grupo{
   display: none;
 }
