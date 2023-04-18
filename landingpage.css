@@ -150,7 +150,17 @@ footer {
   display: flex;
   background-image: linear-gradient(to right, #020101 0%, rgb(33, 3, 82) 100%);/* Color */
   justify-content: center;
+ 
 }
+textarea{
+position: absolute;
+right: 100px;
+top: 2310px;
+height: 100px;
+width: 400px;
+}
+
+
 
 .list2 {/* Lista 2 */
   min-width: 700px;/* Separación de lo elementos de la lita */
